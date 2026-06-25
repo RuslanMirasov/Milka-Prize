@@ -1,3 +1,3 @@
-# Alpen Gold - Plug
+# Milka - Prize
 
 ![Project Preview](./public/poster.webp)
