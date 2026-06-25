@@ -25,6 +25,9 @@
     @media (min-height: 680px) {
       height: 250%;
       background-size: 800px 100%;
+      @media (min-width: 500px) {
+        background-size: 100% 100%;
+      }
     }
   }
 }

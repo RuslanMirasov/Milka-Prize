@@ -378,6 +378,11 @@ button:disabled {
     background-size: 800px 100%;
   }
 }
+@media (min-height: 680px) and (min-width: 500px) {
+  .footer:before {
+    background-size: 100% 100%;
+  }
+}
 
 .footer__image {
   display: none;
