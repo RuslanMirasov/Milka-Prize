@@ -1,5 +1,6 @@
 :root {
   --font: 'drukwide', sans-serif;
+  --milka: 'lorrach-heavy', sans-serif;
   --white: #ffffff;
   --black: #000000;
   --brown: #7e3d23;
@@ -211,6 +212,12 @@ button:disabled {
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "lorrach-heavy";
+  src: url("../fonts/lorrach-heavy.woff2") format("woff2"), url("../fonts/lorrach-heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,47 +304,23 @@ button:disabled {
   width: 100%;
   height: auto;
   z-index: 99;
-  padding: 20px;
+  padding: 15px;
 }
-
-.header__hashtag {
-  width: 48.5%;
-  max-width: 194px;
+.header span {
+  display: block;
+  font-family: var(--milka);
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 5%;
+  width: 100%;
+  text-align: center;
+  margin-top: 24px;
+  padding-right: 60px;
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 45%;
-  max-width: 180px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 4px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-.header__logo img {
-  width: 100%;
-}
-.header__logo span {
-  font-size: 11px;
-  text-align: center;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-}
-@media (max-width: 374px) {
-  .header__logo span {
-    font-size: 10px;
-  }
+  position: absolute;
+  right: 15px;
 }
 
 .footer {
