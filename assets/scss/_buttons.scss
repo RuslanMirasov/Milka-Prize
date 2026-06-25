@@ -29,3 +29,13 @@
     0 71px 43px rgba(0, 0, 0, 0.05),
     0 127px 51px rgba(0, 0, 0, 0.01);
 }
+
+.body.loaded[data-state='start'],
+.body.loaded[data-state='finish'] {
+  .button {
+    cursor: pointer;
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}

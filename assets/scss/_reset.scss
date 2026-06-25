@@ -81,29 +81,12 @@ button {
 
 .main {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
   position: relative;
   width: 100%;
   height: auto;
-  min-height: calc(100svh - 120px);
+  min-height: 100svh;
+  flex-direction: column;
+  align-content: space-between;
   overflow: hidden;
   z-index: 1;
-  @media (max-height: 759px) {
-    min-height: calc(100svh - 100px);
-  }
-}
-
-.container {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-  z-index: 1;
-  @media (max-width: 1279px) {
-    max-width: 100%;
-    padding: 0px 20px;
-  }
 }
