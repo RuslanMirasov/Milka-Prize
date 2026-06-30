@@ -267,7 +267,7 @@ button:disabled {
 }
 @media (min-height: 812px) {
   .hero__image picture {
-    width: 600px;
+    width: 550px;
   }
 }
 .hero__image picture img {

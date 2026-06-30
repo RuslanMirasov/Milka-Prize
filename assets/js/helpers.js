@@ -20,7 +20,7 @@ export const initRandomPresent = (format = 'jpg') => {
   if (!btn) return;
 
   const falderUrl = btn.getAttribute('href');
-  const presentNumber = Math.floor(Math.random() * 8) + 1;
+  const presentNumber = Math.floor(Math.random() * 4) + 1;
   const newHref = `${falderUrl}/${presentNumber}.${format}`;
 
   btn.setAttribute('href', newHref);
